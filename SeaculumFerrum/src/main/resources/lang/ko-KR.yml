@@ -1,0 +1,309 @@
+name: EventWar
+version: 0.01
+language: korean
+author: 카멘
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+plugin_prefix: '&f&l[&9&l 푸른별 &f&l] &8➤'
+msg_err_command_disable: '&c해당 명령에 대한 충분한 권한이 없습니다.'
+msg_err_x_war_type_is_disabled: '전쟁 유형: %s은(는) 구성에서 비활성화되어 있습니다.'
+
+#Message show when a town survives a CivilWar or TownWar
+msg_war_surviving_town_spoils: '&6[전쟁]&b 살아남은 마을: %s 이(가) %s 에서 승리했습니다.'
+#Message show when a nation survives a WorldWar or NationWar
+msg_war_surviving_nation_spoils: '&6[전쟁]&b 살아남은 국가: %s 이(가) %s 에서 승리했습니다.'
+#Message show when paying the highest scorer in a Riot war.
+msg_war_riot_highest_score: '&6[전쟁]&b 폭동의 승자: %s 가 %s 를 이겼습니다 %s점의 점수로 말이죠.'
+#Message shown when an admin does /ta toggle war {WARNAME} to end a war.
+msg_war_name_ended: '&6[전쟁]&b %s 이가 관리자 명령으로 인해 종료되었습니다.'
+#Messages shown when a war does not exist with the given name.
+msg_err_unknown_war: '%s 이라는 이름으로 알려진 전쟁은 없습니다.'
+#Message shown when a town is joined into a war.
+msg_you_have_joined_a_war_of_type: '%s 유형의 전쟁에 참가했습니다.'
+#The message shown to attackers when a townblock is being attacked.
+msg_war_townblock_hp: '&8[%s] (%s) HP: %s %s'
+#The message shown when a townblock is being healed.
+msg_war_townblock_healed: '&8[Heal](%s) HP: %s (&a+%s&8)'
+#Message shown when a town is removed from the war for not being able to pay death costs.
+msg_town_could_not_pay_death_costs_removing_from_war: '%s은(는) %s에게 사망 비용을 지불할 수 없습니다, %s을(를) 전쟁에서 제거했습니다.'
+#Message shown when a player has run out of lives and is removed from the war
+msg_resident_has_run_out_of_lives_and_is_eliminated_from_the_war: '%s의 수명이 다하여 %s에서 제거되었습니다.'
+#Message shown when a player chooses to fight for the rebels in war.
+msg_you_have_sided_with_the_rebels: '당신은 반군 편에 섰습니다.'
+#Message shown when a player chooses to fight for the government in war.
+msg_you_have_sided_with_the_government: '당신은 정부의 편에 섰습니다.'
+#Message shown when a player cannot pay the war death price during a RIOT war, and they are eliminated.
+msg_player_couldnt_pay_eliminated_riot: '%s''의 지갑이 %s을(를) 충족할 수 없습니다. 폭동에서 그들을 제거합니다.'
+#Message shown announcing the delay for team selection for civilwar and riots.
+msg_team_selection_delay_seconds_remaining: '&4%s은(는) 정부와 반정부 중 하나를 선택해야 합니다.'
+#Message shown when players must choose between state or rebel in RIOT and CIVILWAR wars.
+msg_which_side_will_you_choose: '당신은 국가/도시 또는 반군과 함께해야 합니다. 어느 편을 선택할 것인가?'
+#Message shown on a new day to a town or nation, awarding a war token.
+msg_war_token_received: '평화롭지 않은 상태로 인해 %s은(는) 전쟁 토큰을 받았습니다.'
+#Message shown when a command is used from the console, which must be run by a player.
+msg_not_for_console: '이 명령은 콘솔에서 사용하기 위한 것이 아닙니다.'
+#Message shown when a player tries to use a non-existant war name.
+msg_invalid_war_type: '잘못된 전쟁 유형입니다.'
+#Message shown when a player does not have enough war tokens to purchase a declaration.
+msg_not_enough_tokens_to_purchase_war: '그 전쟁 선언문을 구매하기에는 토큰이 충분하지 않습니다! %s 토큰이 필요합니다.'
+#Message shown when a player has purchased a declaration of war.
+msg_town_purchased_declaration_of_type: '%s은(는) 전쟁 선언문 유형 %s을(를) 구입했습니다.'
+#Message shown in the confirmation before a town purchases a declaration of war.
+msg_you_are_about_to_purchase_a_declaration_of_war_of_type_for_x_tokens: '%s 유형의 전쟁 선언문을 구매 할려고 합니다 그것은 %s 토큰에 대한 선언문 입니다. 확실하게 구매 하실건가요?'
+
+#Message confirming wars are purged from database.
+msg_wars_purged: '전쟁이 제거 되었습니다.'
+#Message shown when a war has been started and the original countdown is about to start.
+msg_beginning_x_war_in_x_seconds: '%s 를 %s 초 후 시작합니다.'
+#Message shown in war participants command when there are no wars.
+msg_there_are_no_wars: '진행중인 전쟁은 없습니다!'
+#Message shown for war stats and scores commands when the command runner has no war.
+msg_you_do_not_have_a_war: '당신은 전쟁이 없습니다!'
+
+
+msg_war_eliminated: '&6[전쟁]&b %s 은(는) 전쟁에서 제거되었습니다.'
+msg_war_forfeited: '&6[전쟁]&b %s 이(가) 몰수되었습니다.'
+msg_war_join: '&6[전쟁] &b%s 이(가) 전투에 참여했습니다!'
+msg_war_join_forced: '&6[전쟁]&b %s의 국가는 글로벌 설정으로 인해 전쟁을 겪을 수 밖에 없었습니다!'
+msg_war_join_nation: '&6[전쟁]&b %s의 국가가 전쟁에 참여했습니다!'
+msg_war_lose_block: '&6[전쟁]&b (%s) 가 전복 되었습니다 그들은 %s에 속한팀 입니다.'
+msg_war_score: '&6[전쟁]&b %s이(가) %d점을 얻었습니다!'
+msg_war_score_nation_elim: '&6[전쟁]&b %s 는 %d 포인트를 받았습니다 %s 국가를 제거한 보상으로 말이죠!'
+msg_war_score_town_elim: '&6[전쟁]&b %s 는 %d 포인트를 받았습니다 %s 마을을 제거한 보상으로 말이죠! (%d 마을 블록 캡쳐)'
+msg_war_score_townblock_elim: '&6[전쟁]&b %s 은(는) %d 포인트를 받았습니다 마을 블럭 %s 를 제거 해서 말이죠!'
+msg_war_score_player_kill: '&6[전쟁]&b %s 가 %s 를 죽였습니다. (%s 에 대한 %d 포인트)'
+msg_war_score_player_kill_defending: '&6[전쟁]&b %s 가 %s 를 죽였습니다 %s 이(가) 방어하는 동안 말이죠. (%s 에 대한 %d 포인트)'
+msg_war_king_killed: '&6[전쟁]&b %s의 왕이 죽었습니다!'
+msg_war_mayor_killed: '&6[전쟁]&b %s''의 시장이 사망했습니다!'
+msg_war_winning_nation_spoils: '&6[전쟁]&b 우승 국가: %s 가 %s 를 이겼습니다.'
+msg_war_winning_town_spoils: '&6[전쟁]&b 최고 점수: %s님이 %s점수 %d로 승리했습니다.'
+msg_war_cannot_do: '&c세계가 전쟁 중일 때 당신은 이것을 할 수 없습니다.'
+msg_war_started: '&e전쟁 카운트다운을 시작했습니다.'
+
+msg_err_warzone_cannot_edit_material: '&c전쟁터 에서 %s %s 을(를) 할 수 없습니다.'
+msg_err_warzone_cannot_use_switches: '&c전쟁터에서는 스위치를 사용할 수 없습니다.'
+msg_err_warzone_cannot_use_item: '&c이 아이템은 전쟁터에서 사용할 수 없습니다.'
+
+msg_war_a_player_has_no_town: '&6[전쟁]&f 전투 중인 플레이어 중 한 명은 마을이 없으며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_no_nation: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 국가가 없는 마을을 갖고 있으며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_a_neutral_nation: '&6[전쟁]&f 전투 중인 플레이어 중 한 명은 중립국의 일원이며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_been_removed_from_war: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 전쟁 이벤트를 방해할 수 없는 마을의 일부입니다.'
+msg_war_a_player_is_an_ally: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 다른 플레이어를 동맹국으로 간주합니다.'
+msg_war_a_player_has_no_town: '&6[전쟁]&f 전투 중인 플레이어 중 한 명은 마을이 없으며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_no_nation: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 국가가 없는 마을을 갖고 있으며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_a_neutral_nation: '&6[전쟁]&f 전투 중인 플레이어 중 한 명은 중립국의 일원이며 전쟁 이벤트 동안 간섭할 수 없습니다.'
+msg_war_a_player_has_been_removed_from_war: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 전쟁 이벤트를 방해할 수 없는 마을의 일부입니다.'
+msg_war_a_player_is_an_ally: '&6[전쟁]&f 전투 중인 플레이어 중 한 명이 다른 플레이어를 동맹국으로 간주합니다.'
+msg_err_wartime_could_not_take_deathfunds: '전쟁중 사망 자금을 가져갈 수 없습니다.'
+
+msg_war_seeding_spoils_with: '&6[전쟁]&f %s과(와) 전쟁의 전리품을 심습니다'
+msg_war_total_seeding_spoils: '&6[전쟁]&f 이 전쟁에서 플레이한 전쟁의 총 전리품: %s'
+msg_war_activate_war_hud_tip: '&6[전쟁]&f War hud를 활성화하려면 ''/towny war hud'' 를 사용하세요.'
+msg_war_town_under_attack: '&8당신의 마을이 공격을 받고 있습니다!'
+msg_war_nation_under_attack: '&8당신의 나라가 공격을 받고 있습니다!'
+msg_war_nations_ally_under_attack: '&8국가의 동맹국 %s이(가) 공격을 받고 있습니다!'
+msg_war_homeblock_under_attack: '&8당신의 마을의 홈 블록이 공격을 받고 있습니다!'
+msg_war_nation_member_homeblock_under_attack: '&8당신의 국가 구성원 %s의 마을이 공격을 받고 있습니다!'
+msg_war_nation_ally_homeblock_under_attack: '&8당신 국가의 동맹국 %s''의 홈블록이 공격을 받고 있습니다!'
+msg_war_town_ran_out_of_money: '당신의 마을은 전쟁에서 스스로를 부양할 자금이 바닥났습니다.'
+msg_war_town_lost_money_townblock: '당신의 마을은 %s을(를) 잃었습니다.'
+msg_war_jailbreak: '&6[전쟁]&f %s에 탈옥이 발생하여 %s 죄수가 석방되었습니다!'
+msg_war_town_removed_from_war_titlemsg: '당신의 마을은 전쟁에서 제거되었습니다'
+msg_war_nation_removed_from_war_titlemsg: '당신의 국가는 전쟁에서 제거되었습니다'
+msg_war_append_townblocks_fallen: ' 떨어진 마을 블록)'
+
+war_hud_homeblock: '홈블럭'
+war_hud_wilderness: '황야'
+war_hud_true: 'True'
+war_hud_false: 'False'
+war_hud_peaceful: 'Peaceful'
+war_hud_fallen: 'Fallen'
+war_hud_townless: 'Townless!'
+war_hud_war: '전쟁'
+war_hud_score: '점수: '
+war_hud_location: '위치'
+war_hud_nation: '국가: '
+war_hud_town: '마을: '
+war_hud_attackable: '공격할 수 있는곳: '
+war_hud_health: '체력: '
+war_hud_top_towns: '상위 마을'
+war_hud_top_residents: '상위 거주자'
+war_stats_nations: '  국가: '
+war_stats_towns: '  마을: '
+war_stats_residents: '  거주자: '
+war_stats_warzone: '  전쟁터: '
+war_stats_spoils_of_war: '  전쟁의 전리품: '
+war_starts_in_x: '&4%s에서 전쟁 시작'
+
+msg_war_not_enough_nations: '&6[전쟁]&f 전쟁을 위해 모인 나라가 2개도 채 되지 않아 전쟁이 취소되었습니다.'
+msg_war_no_enemies_for_war: '&6[전쟁]&f 현재 전쟁을 위해 모인 적이 없으며 전쟁이 취소되었습니다.'
+msg_war_prefix: '&6[전쟁]&f '
+msg_war_participants_header: '&6[전쟁] &e국가 이름 &f(&b마을&f)'
+msg_war_participants: '&6[전쟁] &e%s &f(&b%s&f)'
+msg_war_participants2: '&6[전쟁] &e%s &f(&b%s&f) &f(&b%s&f)'
+msg_war_participants_civilwar_header: '&6[전쟁] &e마을 이름 &f(&b거주자&f) &f(&bSide&f)'
+msg_war_participants_townwar_header: '&6[전쟁] &e마을 이름 &f(&b거주자&f)'
+msg_war_participants_riot_header: '&6[전쟁] &e주민 이름 &f(&b생명&f) &f(&bSide&f)'
+msg_war_name_participants: '%s 참가자들'
+
+#Shown when a nation has its neutrality switch off because nations aren't allowed to be neutral.
+msg_neutrality_removed: '당신의 국가는 다가오는 전쟁에 대해 중립을 유지할 수 없습니다!'
+#Shown when a late-comer joins a riot or civil war for the government:
+msg_latecomer_x_has_sided_with_the_gov: '전쟁에 늦게 참가한 %s은(는) 정부의 편에 섰습니다.'
+#Shown when a late-comer joins a riot or civil war for the rebels:
+msg_latecomer_x_has_sided_with_the_reb: '전쟁에 늦게 참가한 %s은(는) 반군 편에 섰습니다.'
+
+#Shown when a war ends with no scoring having happened.
+msg_no_one_scored_during_the_war: '전쟁 중에 아무도 득점하지 못했으므로 지속적인 여파가 없습니다.'
+#Shown when townconquering is true and a riot ends with the mayor winning.
+msg_mayor_retains_control_of_the_city: '%s은(는) 높은 점수를 받아 폭동을 끝냈습니다. %s의 새 시장이 없습니다.'
+#Shown when townconquering is true and a riot ends with the mayor losing to a new mayor.
+msg_new_mayor_has_become_the_new_mayor_of: '폭동은 %s이(가) %s의 시장 대행으로 이어지면서 종료되었습니다.'
+#Shown when townconquering is true and a civil ends with the king winning.
+msg_king_retains_control_of_the_nation: '%s은(는) 내전을 끝내고 %s의 국가를 확보했습니다. 수도는 국가의 책임으로 남아 있습니다.'
+#Shown when townconquering is true and a civil ends with the king losing and a new capital is chosen.
+msg_new_king_has_become_the_new_king_of: '%s은(는) 내전에서 수도를 격파했으며 이제 %s은(는) %s의 수도입니다.'
+#Shown when townconquering is true and a townwar has ended with the losing town being absorbed by the winning town.
+msg_town_has_fallen_and_is_being_absorbed_by_the_winning_town: '%s의 마을은 패배했으며 %s이(가) 점령하고 있습니다.'
+#Shown when a riot war ends because all the rioters are in jail.
+msg_riot_over_all_rioters_are_in_jail: '폭도들은 모두 죽거나 감옥에 수감되어 있습니다. 폭동 끝났어.'
+#Shown when an admin sets a town's war tokens.
+msg_town_tokens_set_to: '%s의 토큰이 %s로 설정되었습니다.'
+
+#War Confirmation Messages
+
+#Message shown in the confirmation when a player starts a riot.
+player_are_you_sure_you_want_to_start_a_riot: '당신의 도시에서 폭동을 일으키시겠습니까?'
+#Message shown in the confirmation when a player starts a town war.
+player_are_you_sure_you_want_to_start_a_townwar: '당신의 마을과 %s 사이에 전쟁을 시작하시겠습니까?'
+#Message shown in the confirmation when a player starts a civil war.
+player_are_you_sure_you_want_to_start_a_civilwar: '국가를 내전으로 몰아넣으시겠습니까?'
+#Message shown in the confirmation when a player starts a nation war.
+player_are_you_sure_you_want_to_start_a_nationwar: '당신의 국가와 %s 사이에 전쟁을 시작하시겠습니까?'
+#Message shown in the confirmation when a player starts a world war.
+player_are_you_sure_you_want_to_start_a_worldwar: '정말 세계 대전을 시작하시겠습니까?'
+
+#Message shown when a player is unable to begin a war, because they don't have a Declaration Of War.
+msg_err_you_are_not_holding_dow: '전쟁을 시작할 수 없습니다. 전쟁 선언문을 들고 있지 않습니다.'
+#Message shown when a player is unable to begin a war, because they don't have the correct type of Declaration Of War.
+msg_err_you_are_not_holding_correct_dow: '전쟁을 시작할 수 없습니다. 올바른 유형의 전쟁 선언문을 들고 있지 않습니다.'
+#Message shown when a player is unable to begin a war, because the DoW they hold was bought by a deleted town.
+msg_err_dow_owner_no_longer_exists: '이 전쟁 선언서는 더 이상 존재하지 않는 마을에서 구입했습니다.'
+#Message shown when a player is unable to begin a war, because the DoW they was bought by another town.
+msg_err_dow_owner_not_your_town: '이 전쟁 선언문은 다른 마을에서 구입했으며 귀하의 마을에서는 사용할 수 없습니다.'
+
+#Message shown when a town has been conquered by a nation for a number of days.
+msg_war_town_has_been_conquered_by_nation_x_for_x_days: '%s 마을은 %s에 의해 정복 당했습니다 %s일 동안 말이죠.'
+#Message shown when a town has been conquered by a nation for an unlimited amount of days.
+msg_war_town_has_been_conquered_by_nation_x_forever: '마을 %s은(는) 국가 %s에 의해 무제한으로 정복되었습니다.'
+
+#Error Message shown when a war is declared on a neutral town or nation.
+msg_err_cannot_declare_war_on_neutral: '중립 도시/국가에 선전포고할 수 없습니다.'
+
+#Error message shown when there aren't enough people online for a riot war.
+msg_err_not_enough_people_online_for_riot: '당신의 마을에 온라인 사람이 충분하지 않습니다. 폭동을 시작하려면 %s이(가) 필요합니다.'
+#Error message shown when there aren't enough people online for a town war.
+msg_err_not_enough_people_online_for_townwar: '각 마을에 온라인 사람이 충분하지 않습니다. 마을 전쟁을 시작하려면 두 마을에 %s이(가) 필요합니다.'
+#Error message shown when there aren't enough people online for a civil war.
+msg_err_not_enough_people_online_for_civilwar: '당신의 국가에 온라인 사람이 충분하지 않습니다. 국가 전쟁을 시작하려면 %s이(가) 필요합니다.'
+#Error message shown when there aren't enough people online for a nation war.
+msg_err_not_enough_people_online_for_nationwar: '각 국가에 온라인 사람이 충분하지 않습니다. 국가 전쟁을 시작하려면 두 도시에 %s이(가) 필요합니다.'
+
+#Error message shown when a town with no nation tries to redeem tokens for a war type that requires a nation.
+msg_err_you_need_a_nation_to_redeem_for_type: '%s 유형의 전쟁 선언에 대한 토큰을 교환하려면 마을이 국가의 일부여야 합니다.'
+
+#Message shown when a conquered town is denied the ability to do something.
+msg_you_cannot_do_that_while_conquered: '당신의 마을이 정복된 동안에는 그렇게 할 수 없습니다.'
+
+#Message shown when /ta reload event is used successfully.
+msg_event_war_has_been_reloaded: 'EventWar가 성공적으로 다시 로드되었습니다.'
+
+#Message shown when a war ends.
+msg_event_war_has_ended: '%s이(가) 종료되었습니다.'
+
+#Message shown to the surrendering player when their surrender has been accepted.
+msg_surrender_accepted: '당신의 항복이 받아들여졌습니다.'
+#Message shown to the surrendering player when their surrender was denied.
+msg_surrender_denied: '당신의 항복이 거부되었습니다.'
+#Message shown to the player who has accepted a surrender.
+msg_surrender_accepted_receiver: '%s의 항복을 수락했습니다.'
+#Message shown to the player who has denied a surrender.
+msg_surrender_denied_receiver: '당신은 %s의 항복을 거부했습니다.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is offline.
+msg_could_not_surrender: '플레이어 %s은(는) 귀하의 항복을 수락할 온라인 상태가 아닙니다.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is invalid.
+msg_could_not_surrender_invalid: '상대편을 장악하고 있는 선수가 투항할 수 없어 승부를 가리지 못했다.'
+#Message shown when a town cannot surrender because they lack the funds
+msg_could_not_surrender_money: '%s은(는) 은행에 항복할 충분한 돈이 없습니다.: %s.'
+#Message shown when a town/nation pays to surrend.
+msg_town_paid: '%s이(가) 전쟁에서 %s을(를) 지불했습니다.'
+#Message shown when a town could not be forfeited in a surrender deal.
+msg_town_could_not_be_transferred: '마을 %s를 양도할 수 없으며 항복이 취소됩니다.'
+#Message shown when a town offers either money or towns for peace.
+msg_single_trade_for_peace: '%s은(는) 전쟁을 끝내기 위해 %s을(를) 제안합니다.'
+#Message shown when a town offers towns and money for peace.
+msg_money_and_towns_for_peace: '%s은(는) 전쟁을 끝내기 위해 %s 및 %s을(를) 제공합니다.'
+#Message shown when peace is asked for nothing in return.
+msg_white_peace: '%s은(는) 평화를 요청합니다.'
+#Message shown in the surrender confirmation.
+msg_will_you_accept_their_surrender: '%s의 항복을 수락하시겠습니까?'
+
+#Message shown when a player cannot surrender in war because of the war type doesn't allow surrender.
+msg_err_you_are_not_allowed_to_surrender_this_war_type: '다음 유형의 전쟁에서 항복할 수 없습니다: %s'
+#Message shown when a player ends up with an empty town list for a Surrender.
+msg_err_unable_to_surrender_any_of_those_towns: '당신은 그 어떤 도시도 항복할 수 없습니다.'
+#Message shown when a player already has a pending surrender.
+msg_err_you_already_have_a_pending_surrender: '이미 보류 중인 항복 제안이 있습니다.'
+#Message shown when a player makes a surrender with no offers (white peace.)
+msg_surrender_offer_made: '당신은 백기의 평화 항복을 제안했습니다.'
+#Message shown when a player makes a surrender for money.
+msg_surrender_offer_made_for_money: '%s에게 항복을 제안했습니다.'
+#Message shown when a player makes a surrender for money and towns.
+msg_surrender_offer_made_for_money_and_towns: '%s 및 다음 마을에 대한 항복을 제안했습니다: %s.'
+#Message shown when a player makes a surrender for towns.
+msg_surrender_offer_made_for_towns: '다음 마을에 항복을 제안했습니다: %s'
+#Message shown when a player tries to create a surrender for towns, but the war type doesn't support it.
+msg_surrendering_towns_not_allowed_for_this_war_type: '이 전쟁 유형에서는 도시에 항복을 제안할 수 없습니다.'
+#Message shown when a player who is not the leader tries to surrender.
+msg_not_the_leader: '당신은 지도자가 아니며 항복할 수 없습니다.'
+#Message shown to a player confirming they want to surrender a riot, civil war or world war.
+msg_are_you_sure_you_want_to_surrender: '정말 전쟁에서 항복하시겠습니까?'
+
+#Message shown when a player is given a copy of the EventWar guidebook.
+msg_you_have_received_the_eventwar_guidebook: '전쟁 가이드북을 받았습니다.'
+#Message when an admin gives a life to a player.
+msg_you_have_given_one_life_to_x: '%s에게 생명을 주었습니다.'
+#Message shown to the player when an admin gives a life to a player.
+msg_you_have_received_one_life: '당신은 하나의 추가 생명을 받았습니다.'
+#Message when an admin gives lives to a player.
+msg_you_have_given_x_lives_to_x: '%d명의 생명을 %s에게 주었습니다.'
+#Message shown to the player when an admin gives lives to a player.
+msg_you_have_received_x_lives: '%d개의 추가 생명을 얻었습니다.'
+#Messsage shown when a player has no war.
+msg_err_the_player_has_no_war: '그 플레이어는 전쟁이 없습니다.'
+#Message shown when a totem of undying is prevented from being used.
+msg_err_unable_to_use_totems_in_warring_towns: '전쟁 중인 마을에서는 불사의 토템을 사용할 수 없습니다.'
+
+#Message shown when joining a town is denied, because that town is at war.
+msg_err_cannot_join_town_with_active_war: '그들은 전쟁 중이기 때문에 이 마을에 합류할 수 없습니다.'
+#Message shown when joining a nation is denied, because that nation is at war.
+msg_err_cannot_join_nation_with_active_war: '그들은 전쟁 중이기 때문에 이 나라에 합류할 수 없습니다.'

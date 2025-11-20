@@ -1,0 +1,89 @@
+name: MCUniversalis
+version: 1.0
+language: Chinese
+author: Palaiologos_F
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+plugin_prefix: '&f[&bMCUniversalisNEO&f] '
+msg_err_command_disable: '&cYou don''t have enough permissions for that command.'
+
+msg_mcu_test: 'Test@@@@!!!'
+msg_riot_break: '无耻的 %s 成功地在 %s 发动了叛乱！'
+msg_riot_civil_break: '无耻的 %s 成功地凭借他们在当地的声望在 %s 发动了内战！'
+msg_riot_success: '拿起武器！我们的城镇成功地推翻了 %s 可恨的暴政！'
+cb_got: '我们得到了对 %s 的 %s 宣战理由'
+cons_employ: '我国刚刚招募了一位杰出的 %s : %s —— &f %s'
+new_successor: ' %s 成为了我国的继承人'
+new_consort: '喜事！%s 成为了我国 %s 的王配/王后'
+new_co_emperor: '我们的使者从帝都发来消息，得知 %s 成为了 %s 我国的共治皇帝，希望他能拥有一个善终'
+given_town_to_vassal: '我们决定给予我们的附庸国 %s 以下省份及可能的核心和宣称：%s'
+get_town_from_suzerain: '喜讯！我们从我们的宗主国 %s 那里得到了以下省份及可能的核心和宣称：%s'
+msg_no_longer_suzerain: ' %s 不再是我们的宗主国，我们的命运再一次回到了我们自己手中'
+msg_no_longer_vassal: ' %s 不再是我们的附庸国，他们还能在恣睢妄为的路上走多远呢？'
+msg_new_suzerain: '新的宗主国：%s !'
+msg_new_vassal: '新的属国：%s !'
+msg_upgraded_idea: '我们的国家理念：%s "得到了更新，当前理念等级：%s 级'
+msg_given_up_idea: '我们放弃了以下国家理念：%s 令人叹息'
+msg_new_idea: '我们获得了一个新的国家理念：%s !,当前理念等级：0 级'
+msg_upgraded_tech: '我国的 %s 科技获得了长足的进步，当前在本方面科技等级：%s 级'
+msg_remove_claim: '我们的国家失去了对 %s 的宣称！'
+msg_remove_core: '我们的国家失去了在 %s 处的核心！'
+msg_obtained_claim: '我们的国家拥有了一个新的宣称：%s'
+msg_obtained_core: '我们的国家拥有了一个新的宣称：5s'
+new_proposal: ' %s 提出了一条新的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_practised: '提案已实施！'
+msg_proposal_ally: '经过投票，我们的权力机构执行了一项光荣的决议：和 %s 缔结了牢不可破的盟约'
+msg_proposal_remove_ally: '经过投票，我们的权力机构执行了一项光荣的决议：和 %s 打破了吹弹可破的盟约'
+msg_proposal_ally_limit: '抱歉，进行中的提案未能如期履行，原因：结盟的数量达到了上限'
+msg_proposal_accept_ally: '经过投票，我们的权力机构执行了一项光荣的决议：接受了 %s 诚挚的结盟请求"'
+msg_proposal_add_enemy: '经过投票，我们的权力机构执行了一项光荣的决议：宣布 %s 为不共戴天的仇敌'
+msg_proposal_remove_enemy: '经过投票，我们的权力机构执行了一项光荣的决议：和 %s 化干戈为玉帛，不再视他们为宿敌"'
+msg_proposal_kick_town: '经过投票，我们的权力机构执行了一项光荣的决议：和城邦 %s 分道扬镳'
+msg_proposal_add_town: '经过投票，我们的权力机构执行了一项光荣的决议：邀请 %s 加入我们国土的大家庭'
+msg_proposal_rank_add: '经过投票，我们的权力机构执行了一项光荣的决议：授予 %s 以 %s 荣耀的称号'
+msg_proposal_rank_remove: '经过投票，我们的权力机构执行了一项光荣的决议：剥夺 %s %s 荣耀的称号'
+msg_mcu_war: 'Duang~~~'
+msg_town_conquest: '灭顶之灾！穷兵黩武的 %s 对我们的城镇发动了征服！！！如果我们告负，我们将成为该国首都王冠领土的一部分……（城市被完全吞并）'
+msg_nation_war: '尊敬的阁下，无耻下流的 %s 对我们宣战！！！他们以 %s 作为战争理由！！"'
+already_practised: '这项提案所代表的建议决策所期望的结果已经发生！不用实施了，不做了，睡大觉。'
+not_admit: '不符合这项提案的前置条件'
+
+msg_shift_ruijam: '国体转变！我们的祖国抛弃了陈旧的 %s 制度，转变为 %s '
+msg_election_new_candidate: ' %S 在选举中提名 %s 成为候选人！，请输入/mcu n gov dem election list查看细则'
+msg_election_vote: ' %s 刚刚在我国的大选中得到了投票支持！，请输入/mcu n gov dem election list查看细则'
+msg_election_new: '我们的执政官已经宣布进行一轮新的选举，请输入/mcu n gov dem election list查看细则'
+msg_byz_oppose_campaign: '帝国公民 %s 声明反对了进行的浩大的运动，认为维护秩序是当前的第一要务，请输入/mcu n gov byz campaign info查看细则'
+msg_byz_support_campaign: '公民 %s 站起来支持了帝都正在进行的运动，请输入/mcu n gov byz campaign info查看细则'
+msg_byz_new_campaign: '在帝都的中心广场，%s 煽动暴民们提起了一项新的运动！，请输入/mcu n gov dem campaign list查看细则'
+msg_proposal_common_oppose: '公民大会成员 %s 投票反对了进行中的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_common_vote: '公民大会成员 %s 投票支持了进行中的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_common_new: '公民大会成员 %s 提出了一条新的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_senate_oppose: '元老院成员 %s 投票反对了进行中的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_senate_vote: '元老院成员 %s 投票支持了进行中的提案，请输入/mcu n gov dem senate list查看细则'
+msg_proposal_senate_new: '元老院成员 %s 提出了一条新的提案，请输入/mcu n gov dem senate list查看细则'
+msg_core_change_mayor: '来自首都的消息：%s 指定了 %s 核心省份(我们的) %s 的地方总督！"'
+
+
+
+
+
+

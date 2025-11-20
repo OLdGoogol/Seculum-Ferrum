@@ -1,0 +1,19 @@
+name: SeaculumFerrum
+version: '0.0.1'
+main: xyz.teamAtlanta.seaculumFerrum.Main
+api-version: 1.20
+author: Palaiologos_F
+depend: [Towny]
+softdepend: [quickShop]
+permissions:
+  sf.town:
+    description: User is able to use all /town oik commands.
+    default: op
+
+  sf.nation:
+    description: User is able to use all /nation oik commands.
+    default: op
+
+  sf.ta:
+    description: User is able to use all /ta oik commands.
+    default: op

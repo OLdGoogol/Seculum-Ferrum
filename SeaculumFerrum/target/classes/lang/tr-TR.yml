@@ -1,0 +1,304 @@
+﻿name: EventWar
+version: 0.01
+language: turkish
+author: LlmDl
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+plugin_prefix: '&f[&6EventWar&f] '
+msg_err_command_disable: '&cBu komutu kullanmak için yetkin yeterli degil'
+msg_err_x_war_type_is_disabled: 'Savas türü: %s ayarlarda kapali.'
+
+#Message show when a town survives a CivilWar or TownWar
+msg_war_surviving_town_spoils: '&6[Savas]&b Hayatta Kalan Sehir: %s kazandi %s.'
+#Message show when a nation survives a WorldWar or NationWar
+msg_war_surviving_nation_spoils: '&6[Savas]&b Hayatta Kalan Ulus: %s kazandi %s.'
+#Message show when paying the highest scorer in a Riot war.
+msg_war_riot_highest_score: '&6[Savas]&b Riot Winner: %s won %s with a score of %s.'
+#Message shown when an admin does /ta toggle war {WARNAME} to end a war.
+msg_war_name_ended: '&6[Savas]&b %s yetkili tarafindan kapatildi'
+#Messages shown when a war does not exist with the given name.
+msg_err_unknown_war: 'Bu isimde bir savas yok: %s'
+#Message shown when a town is joined into a war.
+msg_you_have_joined_a_war_of_type: 'Bir savas türüne katildin: %s.'
+#The message shown to attackers when a townblock is being attacked.
+msg_war_townblock_hp: '&8[%s] (%s) Can: %s %s'
+#The message shown when a townblock is being healed.
+msg_war_townblock_healed: '&8[Iyilestirme](%s) Can: %s (&a+%s&8)'
+#Message shown when a town is removed from the war for not being able to pay death costs.
+msg_town_could_not_pay_death_costs_removing_from_war: '%s ölüm masraflarini karsilayamiyorsun %s, savastan %s çikarildin.'
+#Message shown when a player has run out of lives and is removed from the war
+msg_resident_has_run_out_of_lives_and_is_eliminated_from_the_war: '%s canlari tükendi ve elendiler %s'
+#Message shown when a player chooses to fight for the rebels in war.
+msg_you_have_sided_with_the_rebels: 'Isyancilarin yaninda yer aldiniz.'
+#Message shown when a player chooses to fight for the government in war.
+msg_you_have_sided_with_the_government: 'Hükümetin yaninda yer aldiniz.'
+#Message shown when a player cannot pay the war death price during a RIOT war, and they are eliminated.
+msg_player_couldnt_pay_eliminated_riot: '%s''s cüzdan tatmin edilemedi %s. isyandan çikarildilar.'
+#Message shown announcing the delay for team selection for civilwar and riots.
+msg_team_selection_delay_seconds_remaining: '&4%s hükümet ve hükümet karsiti taraflar arasinda seçim yapmaya devam.'
+#Message shown when players must choose between state or rebel in RIOT and CIVILWAR wars.
+msg_which_side_will_you_choose: 'Milletin/sehrin ya da isyancilarin tarafini tutmalisiniz. Hangi tarafi seçeceksin?'
+#Message shown on a new day to a town or nation, awarding a war token.
+msg_war_token_received: 'Barisçil olmayan durumu nedeniyle %s bir savas jetonu aldi.'
+#Message shown when a command is used from the console, which must be run by a player.
+msg_not_for_console: 'Bu komut konsoldan kullanilmak üzere ayarlanmis.'
+#Message shown when a player tries to use a non-existant war name.
+msg_invalid_war_type: 'Geçersiz savas türü'
+#Message shown when a player does not have enough war tokens to purchase a declaration.
+msg_not_enough_tokens_to_purchase_war: 'O savas ilanini satin almak için yeterli jeton yok! %s jeton gerekiyor.'
+#Message shown when a player has purchased a declaration of war.
+msg_town_purchased_declaration_of_type: '%s, bir tür Savas Bildirgesi satin aldi: %s'
+#Message shown in the confirmation before a town purchases a declaration of war.
+msg_you_are_about_to_purchase_a_declaration_of_war_of_type_for_x_tokens: '%s jeton için %s türünde bir savas ilani satin almak üzeresiniz. Emin misin?'
+
+#Message confirming wars are purged from database.
+msg_wars_purged: 'Savaslar temizlendi.'
+#Message shown when a war has been started and the original countdown is about to start.
+msg_beginning_x_war_in_x_seconds: '%s, %s saniye içinde basliyor.'
+#Message shown in war participants command when there are no wars.
+msg_there_are_no_wars: 'Devam eden savaslar yok!'
+#Message shown for war stats and scores commands when the command runner has no war.
+msg_you_do_not_have_a_war: 'Savasiniz yok!'
+
+
+msg_war_eliminated: '&6[Savas]&b %s savasi kaybetti.'
+msg_war_forfeited: '&6[Savas]&b %s kaybedildi.'
+msg_war_join: '&6[Savas] &b%s savasa katildi!'
+msg_war_join_forced: '&6[Savas]&b %s ulusu, küresel ortamlar nedeniyle savasa zorlandi!'
+msg_war_join_nation: '&6[Savas]&b %s ulusu savasa katildi!'
+msg_war_lose_block: '&6[Savas]&b (%s), %s,e ait düstü.'
+msg_war_score: '&6[Savas]&b %s, %d puan aldi!'
+msg_war_score_nation_elim: '&6[Savas]&b %s, %s ulusunu ortadan kaldirdigi için %d puan kazandi!'
+msg_war_score_town_elim: '&6[Savas]&b %s, %s kasabasini ortadan kaldirdigi için %d puan kazandi! (%d kasaba blogu ele geçirildi)'
+msg_war_score_townblock_elim: '&6[Savas]&b %s, %s sehir blogunu ortadan kaldirdigi için %d puan kazandi!'
+msg_war_score_player_kill: '&6[Savas]&b %s, %,i öldürdü. (%s için (%d puan)'
+msg_war_score_player_kill_defending: '&6[Savas]&b %s, %s savunurken %s öldürdü. (%s için (%d puan)'
+msg_war_king_killed: '&6[Savas]&b %s,in sahi öldürüldü!'
+msg_war_mayor_killed: '&6[Savas]&b %s,in belediye baskani öldürüldü!'
+msg_war_winning_nation_spoils: '&6[Savas]&b Kazanan Ulus: %s, %s kazandi.'
+msg_war_winning_town_spoils: '&6[Savas]&b En Yüksek Puan: %s, %d puaniyla %s kazandi.'
+msg_war_cannot_do: '&cDünya savastayken bunu yapamazsiniz.'
+msg_war_started: '&eSavas geri sayimini baslatti.'
+
+msg_err_warzone_cannot_edit_material: '&cSavas bölgesinde %s %s yapilamaz.'
+msg_err_warzone_cannot_use_switches: '&cWarzoneda anahtarlar kullanilamaz.'
+msg_err_warzone_cannot_use_item: '&cBu esya bir savas bölgesinde kullanilamaz.'
+
+msg_war_a_player_has_no_town: '&6[Savas]&f Savastaki oyunculardan birinin kasabasi yok ve Savas Etkinligi sirasinda müdahale edemez.'
+msg_war_a_player_has_no_nation: '&6[Savas]&f Savastaki oyunculardan birinin ulusu olmayan bir kasabasi var ve Savas Etkinligi sirasinda müdahale edemiyor.'
+msg_war_a_player_has_a_neutral_nation: '&6[Savas]&f One of the players in combat is part of a neutral nation and cannot interfere during the War Event.'
+msg_war_a_player_has_been_removed_from_war: '&6[Savas]&f Savastaki oyunculardan biri tarafsiz bir ulusun parçasidir ve Savas Etkinligi sirasinda müdahale edemez.'
+msg_war_a_player_is_an_ally: '&6[Savas]&f Savastaki oyunculardan biri digerini müttefik olarak görüyor.'
+msg_war_a_player_has_no_town: '&6[Savas]&f Savastaki oyunculardan birinin kasabasi yok ve Savas Etkinligi sirasinda müdahale edemez.'
+msg_war_a_player_has_no_nation: '&6[Savas]&f Savastaki oyunculardan birinin ulusu olmayan bir kasabasi var ve Savas Etkinligi sirasinda müdahale edemiyor.'
+msg_war_a_player_has_a_neutral_nation: '&6[Savas]&f Savastaki oyunculardan biri tarafsiz bir ulusun parçasidir ve Savas Etkinligi sirasinda müdahale edemez.'
+msg_war_a_player_has_been_removed_from_war: '&6[Savas]&f Savastaki oyunculardan biri, Savas Etkinligine müdahale edemeyecek bir kasabanin parçasi.'
+msg_war_a_player_is_an_ally: '&6[Savas]&f Savastaki oyunculardan biri digerini müttefik olarak görüyor.'
+msg_err_wartime_could_not_take_deathfunds: 'Savas zamani ölüm fonlari alinamadi'
+
+msg_war_seeding_spoils_with: '&6[Savas]&f %s ile savas ganimeti tohumlama'
+msg_war_total_seeding_spoils: '&6[Savas]&f Bu savas için oynanmakta olan toplam savas ganimeti: %s'
+msg_war_activate_war_hud_tip: '&6[Savas]&f War hudu etkinlestirmek için ''/towny war hud'' komudunu kullanin.'
+msg_war_town_under_attack: '&8Kasabaniz saldiri altinda!'
+msg_war_nation_under_attack: '&8Ulusunuz saldiri altinda!'
+msg_war_nations_ally_under_attack: '&8Ülkenizin müttefiki %s saldiri altinda!'
+msg_war_homeblock_under_attack: '&8Kasabanizin ana blogu saldiri altinda!'
+msg_war_nation_member_homeblock_under_attack: '&8Ulus üyeniz %s in kasabasi saldiri altinda!'
+msg_war_nation_ally_homeblock_under_attack: '&8Ülkenizin müttefiki %s in ana blogu saldiri altinda!'
+msg_war_town_ran_out_of_money: 'Kasabanizin savasta kendisini desteklemek için fonu tükendi.'
+msg_war_town_lost_money_townblock: 'Kasabaniz %s i kaybetti.'
+msg_war_jailbreak: '&6[Savas]&f %s mahkum(lar)i serbest birakan bir jailbreak oldu!'
+msg_war_town_removed_from_war_titlemsg: 'Kasabaniz savastan çikarildi'
+msg_war_nation_removed_from_war_titlemsg: 'Ulusunuz savastan çikarildi'
+msg_war_append_townblocks_fallen: ' sehir bloklari düstü)'
+
+war_hud_homeblock: 'HOMEBLOCK'
+war_hud_wilderness: 'Bagimsiz Topraklar'
+war_hud_true: 'Dogru'
+war_hud_false: 'Yanlis'
+war_hud_peaceful: 'Barisçil'
+war_hud_fallen: 'Düstg'
+war_hud_townless: 'Townless!'
+war_hud_war: 'Savas'
+war_hud_score: 'Skor: '
+war_hud_location: 'Lokasyon'
+war_hud_nation: 'Ulus: '
+war_hud_town: 'Sehir: '
+war_hud_attackable: 'Saldirilabilir: '
+war_hud_health: 'Can: '
+war_hud_top_towns: 'En Iyi Sehirler'
+war_hud_top_residents: 'En Iyi Sakinler'
+war_stats_nations: '  Uluslar: '
+war_stats_towns: '  Sehirler: '
+war_stats_residents: '  Sakinler '
+war_stats_warzone: '  Savas Alani: '
+war_stats_spoils_of_war: '  Savas Ganimetleri: '
+war_starts_in_x: '&4Savas %s içinde basliyor'
+
+msg_war_not_enough_nations: '&6[Savas]&f Savas için 2den az ulus toplandi, savas iptal edildi.'
+msg_war_no_enemies_for_war: '&6[Savas]&f Su anda savas için hiçbir düsman toplanmadi, savas iptal edildi.'
+msg_war_prefix: '&6[Savas]&f '
+msg_war_participants_header: '&6[Savas] &eÜlke Adi &f(&bSehirler&f)'
+msg_war_participants: '&6[Savas] &e%s &f(&b%s&f)'
+msg_war_participants2: '&6[Savas] &e%s &f(&b%s&f) &f(&b%s&f)'
+msg_war_participants_civilwar_header: '&6[Savas] &eSehir Ismi &f(&bSakinler&f) &f(&bYan&f)'
+msg_war_participants_townwar_header: '&6[Savas] &eSehir Ismi &f(&bSakinler&f)'
+msg_war_participants_riot_header: '&6[Savas] &eSakin Ismi &f(&bYasamlar&f) &f(&bYan&f)'
+msg_war_name_participants: '%s Katilimcilar'
+
+#Shown when a nation has its neutrality switch off because nations aren't allowed to be neutral.
+msg_neutrality_removed: 'Ulusunuz yaklasan savas için tarafsiz kalamaz!'
+#Shown when a late-comer joins a riot or civil war for the government:
+msg_latecomer_x_has_sided_with_the_gov: 'Savasa geç gelen %s, hükümetin yaninda yer aldi.'
+#Shown when a late-comer joins a riot or civil war for the rebels:
+msg_latecomer_x_has_sided_with_the_reb: 'Savasa geç gelen %s, isyancilarin yaninda yer aldi.'
+
+#Shown when a war ends with no scoring having happened.
+msg_no_one_scored_during_the_war: 'Savas sirasinda kimse gol atamadi, bu nedenle kalici bir sonuç yok.'
+#Shown when townconquering is true and a riot ends with the mayor winning.
+msg_mayor_retains_control_of_the_city: '%s yüksek puani aldi ve isyanin sonunu sagladi. %s için yeni belediye baskani yok.'
+#Shown when townconquering is true and a riot ends with the mayor losing to a new mayor.
+msg_new_mayor_has_become_the_new_mayor_of: 'Isyan, %s in %s belediye baskanligini devralmasiyla sona erdi.'
+#Shown when townconquering is true and a civil ends with the king winning.
+msg_king_retains_control_of_the_nation: '%s, iç savasi sona erdirerek %s ülkesini güvence altina aldi. Sermaye ulusun sorumlulugunda kalir.'
+#Shown when townconquering is true and a civil ends with the king losing and a new capital is chosen.
+msg_new_king_has_become_the_new_king_of: '%s, baskenti iç savasta yendi, simdi %s, %s nin baskenti.'
+#Shown when townconquering is true and a townwar has ended with the losing town being absorbed by the winning town.
+msg_town_has_fallen_and_is_being_absorbed_by_the_winning_town: '%s kasabasi kaybetti ve %s tarafindan ele geçiriliyor.'
+#Shown when a riot war ends because all the rioters are in jail.
+msg_riot_over_all_rioters_are_in_jail: 'Isyancilarin hepsi ya öldü ya da hapiste. Isyan bitti.'
+#Shown when an admin sets a town's war tokens.
+msg_town_tokens_set_to: '%s, belirteçlerini %s olarak ayarladi.'
+
+#War Confirmation Messages
+
+#Message shown in the confirmation when a player starts a riot.
+player_are_you_sure_you_want_to_start_a_riot: 'Sehrinizde bir isyan baslatmak istediginizden emin misiniz?'
+#Message shown in the confirmation when a player starts a town war.
+player_are_you_sure_you_want_to_start_a_townwar: 'Kasabanizla %s arasinda bir savas baslatmak istediginizden emin misiniz?'
+#Message shown in the confirmation when a player starts a civil war.
+player_are_you_sure_you_want_to_start_a_civilwar: 'Ülkeni iç savasa sokmak istediginden emin misin?'
+#Message shown in the confirmation when a player starts a nation war.
+player_are_you_sure_you_want_to_start_a_nationwar: 'Ülken ve %s arasinda bir savas baslatmak istediginden emin misin?'
+#Message shown in the confirmation when a player starts a world war.
+player_are_you_sure_you_want_to_start_a_worldwar: 'Bir dünya savasi baslatmak istediginizden emin misiniz?'
+
+#Message shown when a player is unable to begin a war, because they don't have a Declaration Of War.
+msg_err_you_are_not_holding_dow: 'Savas baslatilamiyor, bir Savas Bildirgesi tutmuyorsunuz.'
+#Message shown when a player is unable to begin a war, because they don't have the correct type of Declaration Of War.
+msg_err_you_are_not_holding_correct_dow: 'Savas baslatilamiyor, dogru türde Savas Bildirgesi ne sahip degilsiniz.'
+#Message shown when a player is unable to begin a war, because the DoW they hold was bought by a deleted town.
+msg_err_dow_owner_no_longer_exists: 'Bu Savas Bildirgesi, artik var olmayan bir kasaba tarafindan satin alindi.'
+#Message shown when a player is unable to begin a war, because the DoW they was bought by another town.
+msg_err_dow_owner_not_your_town: 'Bu Savas Bildirgesi baska bir kasaba tarafindan satin alindi, sizin kasabaniz onu kullanamaz.'
+
+#Message shown when a town has been conquered by a nation for a number of days.
+msg_war_town_has_been_conquered_by_nation_x_for_x_days: '%s kasabasi %s ulusu tarafindan %s gün boyunca fethedildi.'
+#Message shown when a town has been conquered by a nation for an unlimited amount of days.
+msg_war_town_has_been_conquered_by_nation_x_forever: '%s kasabasi, %s ulusu tarafindan sinirsiz bir süre boyunca fethedildi.'
+
+#Error Message shown when a war is declared on a neutral town or nation.
+msg_err_cannot_declare_war_on_neutral: 'Tarafsiz bir kasabaya/ulusa savas ilan edemezsiniz.'
+
+#Error message shown when there aren't enough people online for a riot war.
+msg_err_not_enough_people_online_for_riot: 'Kasabanizda çevrimiçi yeteri kadar insan yok, isyanin baslamasi için %s gerekli.'
+#Error message shown when there aren't enough people online for a town war.
+msg_err_not_enough_people_online_for_townwar: 'Kasaba savasinin baslamasi için her kasabada yeterli sayida çevrimiçi insan yok, her iki kasabada da %s gerekli.'
+#Error message shown when there aren't enough people online for a civil war.
+msg_err_not_enough_people_online_for_civilwar: 'Ülkenizde çevrimiçi yeteri kadar insan yok, ulus savasinin baslamasi için %s gerekli.'
+#Error message shown when there aren't enough people online for a nation war.
+msg_err_not_enough_people_online_for_nationwar: 'Her ulusta çevrimiçi yeteri kadar insan yok, ulus savasinin baslamasi için her iki kasabada da %s gerekli.'
+
+#Error message shown when a town with no nation tries to redeem tokens for a war type that requires a nation.
+msg_err_you_need_a_nation_to_redeem_for_type: '%s türünde bir savas ilani için jetonlari kullanabilmek için kasabanizin bir ulusun parçasi olmasi gerekir.'
+
+#Message shown when a conquered town is denied the ability to do something.
+msg_you_cannot_do_that_while_conquered: 'Kasabaniz fethedilmisken bunu yapamazsiniz.'
+
+#Message shown when /ta reload event is used successfully.
+msg_event_war_has_been_reloaded: 'EventWar basariyla güncellendi.'
+
+#Message shown when a war ends.
+msg_event_war_has_ended: '%s sona erdi'
+
+#Message shown to the surrendering player when their surrender has been accepted.
+msg_surrender_accepted: 'Teslimiyetiniz kabul edildi.'
+#Message shown to the surrendering player when their surrender was denied.
+msg_surrender_denied: 'Teslimiyetiniz reddedildi.'
+#Message shown to the player who has accepted a surrender.
+msg_surrender_accepted_receiver: '%s in teslimiyetini kabul ettiniz.'
+#Message shown to the player who has denied a surrender.
+msg_surrender_denied_receiver: '%s in teslim olmasini reddettiniz.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is offline.
+msg_could_not_surrender: '%s oyuncusu teslimiyetinizi kabul etmek için çevrimiçi degil.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is invalid.
+msg_could_not_surrender_invalid: 'Karsi tarafin kontrolünü elinde bulunduran oyuncu tespit edilemedi, teslim olamadi. Bu rapor edilmelidir.'
+#Message shown when a town cannot surrender because they lack the funds
+msg_could_not_surrender_money: '%s bankada teslim olmaya yetecek kadar paraya sahip degil: %s.'
+#Message shown when a town/nation pays to surrend.
+msg_town_paid: '%s, savasta kaybetmek için %s ödedi.'
+#Message shown when a town could not be forfeited in a surrender deal.
+msg_town_could_not_be_transferred: 'Kasaba % aktarilamadi, teslim iptal edildi.'
+#Message shown when a town offers either money or towns for peace.
+msg_single_trade_for_peace: '%s, savasin bitmesi için %s teklif ediyor.'
+#Message shown when a town offers towns and money for peace.
+msg_money_and_towns_for_peace: '%s, savasin bitmesi için %s ve %s teklif ediyor.'
+#Message shown when peace is asked for nothing in return.
+msg_white_peace: '%s baris istiyor.'
+#Message shown in the surrender confirmation.
+msg_will_you_accept_their_surrender: '%s in teslimiyetini kabul edecek misin?'
+
+#Message shown when a player cannot surrender in war because of the war type doesn't allow surrender.
+msg_err_you_are_not_allowed_to_surrender_this_war_type: 'Su türden savasta teslim olmaniza izin verilmez: %s'
+#Message shown when a player ends up with an empty town list for a Surrender.
+msg_err_unable_to_surrender_any_of_those_towns: 'Bu Kasabalardan herhangi birini teslim olarak sunamazsiniz.'
+#Message shown when a player already has a pending surrender.
+msg_err_you_already_have_a_pending_surrender: 'Zaten bekleyen bir teslim teklifiniz var.'
+#Message shown when a player makes a surrender with no offers (white peace.)
+msg_surrender_offer_made: 'Beyaz bir baris teslimi teklif ettin.'
+#Message shown when a player makes a surrender for money.
+msg_surrender_offer_made_for_money: '%s için teslim olma teklifinde bulundunuz.'
+#Message shown when a player makes a surrender for money and towns.
+msg_surrender_offer_made_for_money_and_towns: '%s ve su kasabalar için teslim olma teklifinde bulundunuz: %s.'
+#Message shown when a player makes a surrender for towns.
+msg_surrender_offer_made_for_towns: 'Su sehirler için teslim olma teklifinde bulundunuz: %s.'
+#Message shown when a player tries to create a surrender for towns, but the war type doesn't support it.
+msg_surrendering_towns_not_allowed_for_this_war_type: 'You are unable to offer towns in surrender for this war type.'
+#Message shown when a player who is not the leader tries to surrender.
+msg_not_the_leader: 'Bu savas türü için teslim olan kasabalari teklif edemezsiniz.'
+#Message shown to a player confirming they want to surrender a riot, civil war or world war.
+msg_are_you_sure_you_want_to_surrender: 'Savastan teslim olmak istediginizden emin misiniz?'
+
+#Message shown when a player is given a copy of the EventWar guidebook.
+msg_you_have_received_the_eventwar_guidebook: 'EventWar kilavuz kitabini aldiniz.'
+#Message when an admin gives a life to a player.
+msg_you_have_given_one_life_to_x: '%s e bir hayat verdin.'
+#Message shown to the player when an admin gives a life to a player.
+msg_you_have_received_one_life: 'Ek bir can aldiniz.'
+#Message when an admin gives lives to a player.
+msg_you_have_given_x_lives_to_x: '%s için %d can verdiniz.'
+#Message shown to the player when an admin gives lives to a player.
+msg_you_have_received_x_lives: '%d ek can aldiniz.'
+#Messsage shown when a player has no war.
+msg_err_the_player_has_no_war: 'Bu oyuncunun savasi yok.'
+#Message shown when a totem of undying is prevented from being used.
+msg_err_unable_to_use_totems_in_warring_towns: 'Savasan Kasabalarda Totem kullanamazsiniz.'

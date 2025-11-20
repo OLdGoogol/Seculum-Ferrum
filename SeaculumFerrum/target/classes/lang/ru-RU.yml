@@ -1,0 +1,304 @@
+name: EventWar
+version: 0.01
+language: русский
+author: LlmDl
+website: 'http://townyadvanced.github.io/'
+description: >
+    Language file for all game messages.  Do not alter this file.
+    If you wish to change any of the entries, make a copy named something else.
+    Alternate language files can be enabled by altering the
+    [language] entry in config.yml
+#
+#
+#         You MUST retain spacing in the texts.
+#  If a text begins or ends with a space, it must remain that way.
+#
+#
+#       %s = data to be supplied by the plugin.
+
+# Text colouring
+# --------------
+# Black = &0, Navy = &1, Green = &2, Blue = &3, Red = &4
+# Purple = &5, Gold = &6, LightGray = &7, Gray = &8
+# DarkPurple = &9, LightGreen = &a, LightBlue = &b
+# Rose = &c, LightPurple = &d, Yellow = &e, White = &f
+
+plugin_prefix: '&f[&6EventWar&f] '
+msg_err_command_disable: '&cУ вас недостаточно прав для этой команды'
+msg_err_x_war_type_is_disabled: 'Тип войны: %s отключен.'
+
+#Message show when a town survives a CivilWar or TownWar
+msg_war_surviving_town_spoils: '&6[Война]&b Город выстоял: %s одолел %s.'
+#Message show when a nation survives a WorldWar or NationWar
+msg_war_surviving_nation_spoils: '&6[Война]&b Нация выстояла: %s одолел %s.'
+#Message show when paying the highest scorer in a Riot war.
+msg_war_riot_highest_score: '&6[Война]&b Успешное восстание: %s одолел %s со счетом %s.'
+#Message shown when an admin does /ta toggle war {WARNAME} to end a war.
+msg_war_name_ended: '&6[Война]&b %s война завершена с помощью команды администратора'
+#Messages shown when a war does not exist with the given name.
+msg_err_unknown_war: 'Ни одна война не известна под именем: %s'
+#Message shown when a town is joined into a war.
+msg_you_have_joined_a_war_of_type: 'Вы присоединились к войне типа: %s.'
+#The message shown to attackers when a townblock is being attacked.
+msg_war_townblock_hp: '&8[%s] (%s) HP: %s %s'
+#The message shown when a townblock is being healed.
+msg_war_townblock_healed: '&8[Здоровье](%s) HP: %s (&a+%s&8)'
+#Message shown when a town is removed from the war for not being able to pay death costs.
+msg_town_could_not_pay_death_costs_removing_from_war: '%s не смог оплатить смерть %s, исключив %s из войны.'
+#Message shown when a player has run out of lives and is removed from the war
+msg_resident_has_run_out_of_lives_and_is_eliminated_from_the_war: 'У %s кончились жизни и он исключен из %s'
+#Message shown when a player chooses to fight for the rebels in war.
+msg_you_have_sided_with_the_rebels: 'Вы встали на сторону повстанцев.'
+#Message shown when a player chooses to fight for the government in war.
+msg_you_have_sided_with_the_government: 'Вы встали на сторону правительства.'
+#Message shown when a player cannot pay the war death price during a RIOT war, and they are eliminated.
+msg_player_couldnt_pay_eliminated_riot: '%s не может оплатить смерть %s. Удаление его с восстания.'
+#Message shown announcing the delay for team selection for civilwar and riots.
+msg_team_selection_delay_seconds_remaining: '&4Осталось %s что бы выбрать сторону правительства или повстанцев'
+#Message shown when players must choose between state or rebel in RIOT and CIVILWAR wars.
+msg_which_side_will_you_choose: 'Вы должны встать на сторону нации / города или повстанцев. Какую сторону вы выберете?'
+#Message shown on a new day to a town or nation, awarding a war token.
+msg_war_token_received: 'Благодаря отсуствию мирного статуса, %s получил жетон войны.'
+#Message shown when a command is used from the console, which must be run by a player.
+msg_not_for_console: 'Эта команда не предназначена для использования с консоли.'
+#Message shown when a player tries to use a non-existant war name.
+msg_invalid_war_type: 'Недействительный тип войны.'
+#Message shown when a player does not have enough war tokens to purchase a declaration.
+msg_not_enough_tokens_to_purchase_war: 'Недостаточно жетонов для покупки объявления войны! Вам требуются %s жетонов.'
+#Message shown when a player has purchased a declaration of war.
+msg_town_purchased_declaration_of_type: '%s приобрел книгу объявления войны типа: %s'
+#Message shown in the confirmation before a town purchases a declaration of war.
+msg_you_are_about_to_purchase_a_declaration_of_war_of_type_for_x_tokens: 'Вы собираетесь приобрести книгу объявления войны типа %s за %s жетонов. Вы уверены?'
+
+#Message confirming wars are purged from database.
+msg_wars_purged: 'Войны очищены.'
+#Message shown when a war has been started and the original countdown is about to start.
+msg_beginning_x_war_in_x_seconds: 'Начало войны %s через %s секунд.'
+#Message shown in war participants command when there are no wars.
+msg_there_are_no_wars: 'Нет текущих войн!'
+#Message shown for war stats and scores commands when the command runner has no war.
+msg_you_do_not_have_a_war: 'Вы не ведете войн'
+
+
+msg_war_eliminated: '&6[Война]&b %s выбыл с войны.'
+msg_war_forfeited: '&6[Война]&b %s конфискован.'
+msg_war_join: '&6[Война] &b%s присоидинился к сражению!'
+msg_war_join_forced: '&6[Война]&b Нация %s была вынуждена вступить в войну из-за ситуации в мире!'
+msg_war_join_nation: '&6[Война]&b Нация %s присоидинилась к войне!'
+msg_war_lose_block: '&6[Война]&b (%s) принадлежащий %s пал в битве.'
+msg_war_score: '&6[Война]&b %s набрал %d очков!'
+msg_war_score_nation_elim: '&6[Война]&b %s получил %d очков за уничтожение нации %s!'
+msg_war_score_town_elim: '&6[Война]&b %s получил %d очков за уничтожение города %s! (захвачено %d городских кварталов)'
+msg_war_score_townblock_elim: '&6[Война]&b %s получил %d очков за уничтожение городского квартала %s!'
+msg_war_score_player_kill: '&6[Война]&b %s убил %s. (%d очков за %s)'
+msg_war_score_player_kill_defending: '&6[Война]&b %s был убит %s пока защищал %s. (%d очков за %s)'
+msg_war_king_killed: '&6[Война]&b Король %s был убит!'
+msg_war_mayor_killed: '&6[Война]&b Мэр %s был убит!'
+msg_war_winning_nation_spoils: '&6[Война]&b Нация победитель: %s одолел %s.'
+msg_war_winning_town_spoils: '&6[Война]&b Наибольший счет: %s победил %s со счетом %d.'
+msg_war_cannot_do: '&cВы не можете этого сделать, когда мир находится в состоянии войны.'
+msg_war_started: '&eНачался отсчет войны.'
+
+msg_err_warzone_cannot_edit_material: '&c%s не может %s в зоне боевых действий.'
+msg_err_warzone_cannot_use_switches: '&cНельзя использовать переключатели в зоне боевых действий.'
+msg_err_warzone_cannot_use_item: '&cНельзя использовать этот предмет в зонах боевых действий.'
+
+msg_war_a_player_has_no_town: '&6[Война]&f У одного из игроков, участвующих в бою, нет города, и он не может вмешиваться в военное событие.'
+msg_war_a_player_has_no_nation: '&6[Война]&f У одного из игроков в бою есть город без нации, и он не может вмешиваться в военное событие.'
+msg_war_a_player_has_a_neutral_nation: '&6[Война]&f Один из игроков в бою является частью нейтральной нации и не может вмешиваться в военное событие.'
+msg_war_a_player_has_been_removed_from_war: '&6[Война]&f Один из игроков в бою является частью города, который не может вмешиваться в военное событие.'
+msg_war_a_player_is_an_ally: '&6[Война]&fУ одного из игроков в бою нет города, и он не может вмешиваться в военное событие.'
+msg_war_a_player_has_no_town: '&6[Война]&f У одного из игроков, участвующих в бою, нет города, и он не может вмешиваться в военное событие.'
+msg_war_a_player_has_no_nation: '&6[Война]&f У одного из игроков в бою есть город без нации, и он не может вмешиваться в военное событие.'
+msg_war_a_player_has_a_neutral_nation: '&6[Война]&f Один из игроков в бою является частью нейтральной нации и не может вмешиваться в военное событие.'
+msg_war_a_player_has_been_removed_from_war: '&6[Война]&f Один из игроков в бою является частью города, который не может вмешиваться в военное событие.'
+msg_war_a_player_is_an_ally: '&6[War]&f Один из игроков в бою считает другого своим союзником.'
+msg_err_wartime_could_not_take_deathfunds: 'Не мог взять средства на смерть во время войны.'
+
+msg_war_seeding_spoils_with: '&6[Война]&f Грабеж трофеев на войне с %s'
+msg_war_total_seeding_spoils: '&6[Война]&f Общее количество грабежей за эту войну: %s'
+msg_war_activate_war_hud_tip: '&6[Война]&f Используйте ''/towny war hud'' чтобы получить информацию о городском блоке.'
+msg_war_town_under_attack: '&8Ваш город находится под атакой!'
+msg_war_nation_under_attack: '&Ваша нация находится под атакой!'
+msg_war_nations_ally_under_attack: '&8Союзник вашей нации %s, находится под атакой!'
+msg_war_homeblock_under_attack: '&8Домашний блок вашего города находится под атакой!'
+msg_war_nation_member_homeblock_under_attack: '&8Домашний блок города из вашей нации, %s, находится под атакой!'
+msg_war_nation_ally_homeblock_under_attack: '&8Домашний блок союзника вашей нации, %s,находится под атакой!'
+msg_war_town_ran_out_of_money: 'У вашего города закончились средства, чтобы поддержать себя в войне.'
+msg_war_town_lost_money_townblock: 'Ваш город потерял %s.'
+msg_war_jailbreak: '&6[Война]&f Был совершен побег из тюрьмы в %s, освободивший %s заключенных!'
+msg_war_town_removed_from_war_titlemsg: 'Ваш город был снят с войны'
+msg_war_nation_removed_from_war_titlemsg: 'Ваша нация была снята с войны'
+msg_war_append_townblocks_fallen: ' городские кварталы пали)'
+
+war_hud_homeblock: 'ДОМАШНИЙ БЛОК'
+war_hud_wilderness: 'Дикие земли'
+war_hud_true: 'Правда'
+war_hud_false: 'Ложь'
+war_hud_peaceful: 'Мирный'
+war_hud_fallen: 'Падший'
+war_hud_townless: 'Без города!'
+war_hud_war: 'Война'
+war_hud_score: 'Счет: '
+war_hud_location: 'Локация'
+war_hud_nation: 'Нация: '
+war_hud_town: 'Город: '
+war_hud_attackable: 'Атакованный: '
+war_hud_health: 'Здоровье: '
+war_hud_top_towns: 'Лучшие города'
+war_hud_top_residents: 'Лучшие жители'
+war_stats_nations: '  Нации: '
+war_stats_towns: '  Города: '
+war_stats_residents: '  Жители: '
+war_stats_warzone: '  Зона боевых действий: '
+war_stats_spoils_of_war: '  Трофеи на войне: '
+war_starts_in_x: '&4Статистика на войне с %s'
+
+msg_war_not_enough_nations: '&6[Война]&f Менее 2 наций собрались на войну, война отменена.'
+msg_war_no_enemies_for_war: '&6[Война]&f В настоящее время враги не собрались для войны, война отменена.'
+msg_war_prefix: '&6[Война]&f '
+msg_war_participants_header: '&6[Война] &eНазвание нации &f(&bГорода&f)'
+msg_war_participants: '&6[Война] &e%s &f(&b%s&f)'
+msg_war_participants2: '&6[Война] &e%s &f(&b%s&f) &f(&b%s&f)'
+msg_war_participants_civilwar_header: '&6[Война] &eНазвание города &f(&bЖители&f) &f(&bСторона&f)'
+msg_war_participants_townwar_header: '&6[Война] &eНазвание города &f(&bЖители&f)'
+msg_war_participants_riot_header: '&6[Война] &eЖитель &f(&bЖизни&f) &f(&bСторона&f)'
+msg_war_name_participants: '%s Участники'
+
+#Shown when a nation has its neutrality switch off because nations aren't allowed to be neutral.
+msg_neutrality_removed: 'Ваша нация не может оставаться нейтральной в предстоящей войне!'
+#Shown when a late-comer joins a riot or civil war for the government:
+msg_latecomer_x_has_sided_with_the_gov: 'Не учавствовавшмй в войне, %s, встал на сторону правительства.'
+#Shown when a late-comer joins a riot or civil war for the rebels:
+msg_latecomer_x_has_sided_with_the_reb: 'Не учавствовавшмй в войне, %s, встал на сторону повстанцев.'
+
+#Shown when a war ends with no scoring having happened.
+msg_no_one_scored_during_the_war: 'Никто не заработал очки во время войны, поэтому долгосрочных последствий нет.'
+#Shown when townconquering is true and a riot ends with the mayor winning.
+msg_mayor_retains_control_of_the_city: '%s получил заработал больше очков и обеспечил прекращение восстания. Новый мэр в %s не избирается.'
+#Shown when townconquering is true and a riot ends with the mayor losing to a new mayor.
+msg_new_mayor_has_become_the_new_mayor_of: 'Восстание закончились тем, что %s занял пост мэра в %s.'
+#Shown when townconquering is true and a civil ends with the king winning.
+msg_king_retains_control_of_the_nation: '%s защитил нацию %s, положив конец гражданской войне. Столица по-прежнему находится во владении нации..'
+#Shown when townconquering is true and a civil ends with the king losing and a new capital is chosen.
+msg_new_king_has_become_the_new_king_of: '%s победил столицу в гражданской войне, теперь столица нации %s.'
+#Shown when townconquering is true and a townwar has ended with the losing town being absorbed by the winning town.
+msg_town_has_fallen_and_is_being_absorbed_by_the_winning_town: 'Город %s проиграл, и его захватывает %s.'
+#Shown when a riot war ends because all the rioters are in jail.
+msg_riot_over_all_rioters_are_in_jail: 'Все участники беспорядков либо мертвы, либо заперты в тюрьме. Бунт закончился.'
+#Shown when an admin sets a town's war tokens.
+msg_town_tokens_set_to: '%s установил количество военных жетонов: %s.'
+
+#War Confirmation Messages
+
+#Message shown in the confirmation when a player starts a riot.
+player_are_you_sure_you_want_to_start_a_riot: 'Вы уверены, что хотите устроить бунт в своем городе?'
+#Message shown in the confirmation when a player starts a town war.
+player_are_you_sure_you_want_to_start_a_townwar: 'Вы уверены, что хотите начать войну между вашим городом и %s?'
+#Message shown in the confirmation when a player starts a civil war.
+player_are_you_sure_you_want_to_start_a_civilwar: 'Вы уверены, что хотите ввергнуть свою страну в гражданскую войну?'
+#Message shown in the confirmation when a player starts a nation war.
+player_are_you_sure_you_want_to_start_a_nationwar: 'Вы уверены, что хотите начать войну между своей нацией и %s?'
+#Message shown in the confirmation when a player starts a world war.
+player_are_you_sure_you_want_to_start_a_worldwar: 'Вы уверены, что хотите развязать мировую войну?'
+
+#Message shown when a player is unable to begin a war, because they don't have a Declaration Of War.
+msg_err_you_are_not_holding_dow: 'Невозможно начать войну, у вас нет книги объявления войны.'
+#Message shown when a player is unable to begin a war, because they don't have the correct type of Declaration Of War.
+msg_err_you_are_not_holding_correct_dow: 'Невозможно начать войну, у вас неправильный тип книги объявления войны.'
+#Message shown when a player is unable to begin a war, because the DoW they hold was bought by a deleted town.
+msg_err_dow_owner_no_longer_exists: 'Книга объявления войны была куплена городом, которого больше не существует.'
+#Message shown when a player is unable to begin a war, because the DoW they was bought by another town.
+msg_err_dow_owner_not_your_town: 'Эта книга объявления войны была куплена другим городом, ваш город не может ее использовать..'
+
+#Message shown when a town has been conquered by a nation for a number of days.
+msg_war_town_has_been_conquered_by_nation_x_for_x_days: 'Город %s завоеван нацией %s на протяжении %s дней.'
+#Message shown when a town has been conquered by a nation for an unlimited amount of days.
+msg_war_town_has_been_conquered_by_nation_x_forever: 'Город %s был завоеван нацией %s на неограниченное время.'
+
+#Error Message shown when a war is declared on a neutral town or nation.
+msg_err_cannot_declare_war_on_neutral: 'You cannot declare war on a neutral town/nation.'
+
+#Error message shown when there aren't enough people online for a riot war.
+msg_err_not_enough_people_online_for_riot: 'There are not enough people online in your town, for the riot to begin, %s required.'
+#Error message shown when there aren't enough people online for a town war.
+msg_err_not_enough_people_online_for_townwar: 'There are not enough people online in each town, for the town war to begin, %s required in both towns.'
+#Error message shown when there aren't enough people online for a civil war.
+msg_err_not_enough_people_online_for_civilwar: 'There are not enough people online in your nation, for the nation war to begin, %s required.'
+#Error message shown when there aren't enough people online for a nation war.
+msg_err_not_enough_people_online_for_nationwar: 'There are not enough people online in each nation, for the nation war to begin, %s required in both towns.'
+
+#Error message shown when a town with no nation tries to redeem tokens for a war type that requires a nation.
+msg_err_you_need_a_nation_to_redeem_for_type: 'Your town needs to be part of a nation in order to redeem tokens for a war declaration of type %s.'
+
+#Message shown when a conquered town is denied the ability to do something.
+msg_you_cannot_do_that_while_conquered: 'You cannot do that while your town is conquered.'
+
+#Message shown when /ta reload event is used successfully.
+msg_event_war_has_been_reloaded: 'EventWar has Successfully reloaded.'
+
+#Message shown when a war ends.
+msg_event_war_has_ended: 'The %s has ended.'
+
+#Message shown to the surrendering player when their surrender has been accepted.
+msg_surrender_accepted: 'Your surrender has been accepted.'
+#Message shown to the surrendering player when their surrender was denied.
+msg_surrender_denied: 'Your surrender has been rejected.'
+#Message shown to the player who has accepted a surrender.
+msg_surrender_accepted_receiver: 'You accepted %s''s surrender.'
+#Message shown to the player who has denied a surrender.
+msg_surrender_denied_receiver: 'You denied %s''s surrender.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is offline.
+msg_could_not_surrender: 'The player %s is not online to accept your surrender.'
+#Message shown to the surrendering player when their surrender cannot be accepted because the player is invalid.
+msg_could_not_surrender_invalid: 'The player in control of the opposite side could not be determined, unable to surrender. This should be reported.'
+#Message shown when a town cannot surrender because they lack the funds
+msg_could_not_surrender_money: '%s does not have enough money in the bank to surrender: %s.'
+#Message shown when a town/nation pays to surrend.
+msg_town_paid: '%s has paid %s to forfeit in war.'
+#Message shown when a town could not be forfeited in a surrender deal.
+msg_town_could_not_be_transferred: 'The town % could not be transferred, the surrender is cancelled.'
+#Message shown when a town offers either money or towns for peace.
+msg_single_trade_for_peace: '%s is offering %s in order for the war to end.'
+#Message shown when a town offers towns and money for peace.
+msg_money_and_towns_for_peace: '%s is offering %s and %s in order for the war to end.'
+#Message shown when peace is asked for nothing in return.
+msg_white_peace: '%s is asking for peace.'
+#Message shown in the surrender confirmation.
+msg_will_you_accept_their_surrender: 'Will you accept %s''s surrender?'
+
+#Message shown when a player cannot surrender in war because of the war type doesn't allow surrender.
+msg_err_you_are_not_allowed_to_surrender_this_war_type: 'You are not allowed to surrender in war of type: %s'
+#Message shown when a player ends up with an empty town list for a Surrender.
+msg_err_unable_to_surrender_any_of_those_towns: 'You are unable to offer any of those Towns in surrender.'
+#Message shown when a player already has a pending surrender.
+msg_err_you_already_have_a_pending_surrender: 'You already have a pending surrender offer.'
+#Message shown when a player makes a surrender with no offers (white peace.)
+msg_surrender_offer_made: 'You have offered a white peace surrender.'
+#Message shown when a player makes a surrender for money.
+msg_surrender_offer_made_for_money: 'You have made an offer to surrender for %s.'
+#Message shown when a player makes a surrender for money and towns.
+msg_surrender_offer_made_for_money_and_towns: 'You have made an offer to surrender for %s and the following towns: %s.'
+#Message shown when a player makes a surrender for towns.
+msg_surrender_offer_made_for_towns: 'You have made an offer to surrender for the following towns: %s.'
+#Message shown when a player tries to create a surrender for towns, but the war type doesn't support it.
+msg_surrendering_towns_not_allowed_for_this_war_type: 'You are unable to offer towns in surrender for this war type.'
+#Message shown when a player who is not the leader tries to surrender.
+msg_not_the_leader: 'You are not the leader, you cannot surrender.'
+#Message shown to a player confirming they want to surrender a riot, civil war or world war.
+msg_are_you_sure_you_want_to_surrender: 'Are you sure you want to surrender from the war?'
+
+#Message shown when a player is given a copy of the EventWar guidebook.
+msg_you_have_received_the_eventwar_guidebook: 'You have received the EventWar guidebook.'
+#Message when an admin gives a life to a player.
+msg_you_have_given_one_life_to_x: 'You have given a life to %s.'
+#Message shown to the player when an admin gives a life to a player.
+msg_you_have_received_one_life: 'You have received one additional life.'
+#Message when an admin gives lives to a player.
+msg_you_have_given_x_lives_to_x: 'You have given %d lives to %s.'
+#Message shown to the player when an admin gives lives to a player.
+msg_you_have_received_x_lives: 'You have received %d additional lives.'
+#Messsage shown when a player has no war.
+msg_err_the_player_has_no_war: 'That player has no war.'
+#Message shown when a totem of undying is prevented from being used.
+msg_err_unable_to_use_totems_in_warring_towns: 'You are unable to use Totems of Undying in warring Towns.'
